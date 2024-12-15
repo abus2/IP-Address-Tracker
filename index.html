@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+      <div id="hero-section">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+              <h1>Track IP Addresses </h1>
+              <p>Discover precise location data, ISP details, and more with our powerful IP tracker tool.</p>
+              <div class="search-bar">
+                  <input type="text" id="ip-input" placeholder="Enter an IP or domain name...">
+                  <button id="track-btn">Track Now</button>
+              </div>
+              <p id="error-message"></p>
+              <div id="results"></div>
+          </div>
+      </div>
+
+      <div class="features-section">
+        <h2 class="features-title">Why Choose Our IP Tracker?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">📍</div>
+                <h3>Accurate Geolocation</h3>
+                <p>Get precise latitude, longitude, and city data for any IP.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🌐</div>
+                <h3>Network Insights</h3>
+                <p>Find ISP, ASN, and network details instantly.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">⚡</div>
+                <h3>Real-Time Updates</h3>
+                <p>Track IPs live with instant results and updates.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔗</div>
+                <h3>API Integration</h3>
+                <p>Seamlessly integrate our robust API into your applications.</p>
+            </div>
+        </div>
+    </div>
+
+   
+      <section id="pricing-section" class="pricing-section">
+        <div class="container">
+          <h2 class="section-title">Choose the Plan That’s Right for You</h2>
+          <div class="pricing-cards">
+            <!-- Free Plan -->
+            <div class="pricing-card free">
+              <h3>Free Plan</h3>
+              <p class="price">$0</p>
+              <p class="features">Basic tracking features</p>
+              <p class="features">Up to 100 IPs/month</p>
+              <button class="cta-btn">Get Started</button>
+            </div>
+            
+            <!-- Pro Plan -->
+            <div class="pricing-card pro">
+              <h3>Pro Plan</h3>
+              <p class="price">$9.99/month</p>
+              <p class="features">Advanced tracking</p>
+              <p class="features">Up to 500 IPs/month</p>
+              <p class="features">API access</p>
+              <button class="cta-btn">Subscribe</button>
+            </div>
+    
+            <!-- Enterprise Plan -->
+            <div class="pricing-card enterprise">
+              <h3>Enterprise Plan</h3>
+              <p class="price">$49.99/month</p>
+              <p class="features">Custom solutions</p>
+              <p class="features">Unlimited IPs/month</p>
+              <p class="features">Dedicated support</p>
+              <button class="cta-btn">Contact Sales</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      
+      
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="icon">1</div>
+                    <h3>Enter an IP or Domain</h3>
+                    <p>Input an IP address or domain name to get started.</p>
+                </div>
+                <div class="step">
+                    <div class="icon">2</div>
+                    <h3>Click "Track Now"</h3>
+                    <p>Press the button to initiate the IP tracking process.</p>
+                </div>
+                <div class="step">
+                    <div class="icon">3</div>
+                    <h3>View Detailed Results</h3>
+                    <p>Get live data about the location, ISP, and more.</p>
+                </div>
+            </div>
+            <button class="cta-btn" onclick="showPopup()">Start Tracking</button>
+        </div>
+    </section>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h3>Tracking in Progress...</h3>
+            <p>Your tracking request is being processed.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+   
+    <section class="cta-section">
+      <div class="cta-container">
+          <h1>Start Tracking IPs Now!</h1>
+          <p class="cta-description">Get real-time IP data, including geolocation and ISP details. Take your IP tracking to the next level!</p>
+          <button id="cta-button" onclick="handleCTAButtonClick()">Get Started for Free</button>
+  
+          <!-- Displaying IP info -->
+          <div class="ip-info" id="ip-info">
+            <!-- IP info will be displayed here -->
+          </div>
+      </div>
+    </section>
+       
+   
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Quick Links -->
+     
+
+      <!-- Contact Information -->
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: aboobackersharafudheen74@gmail.com</p>
+        <p>Follow us on social media</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/a_b_u_s?igsh=cDg2MTAzZTFwczFo" class="social-icon"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="https://github.com/abus2" class="social-icon"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="https://www.facebook.com/profile.php?id=61555336857143" class="social-icon"><ion-icon name="logo-facebook"></ion-icon></a>
+        </div>
+      </div>
+
+      <!-- Legal Links -->
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright Text -->
+    <div class="footer-bottom">
+      <p>© 2024 ABOOBACKER SHARFUDHEEN.</p>
+    </div>
+  </footer>
+
+ 
+
+
+
+
+
+      <script src="script.js"></script>
+      <script src="script.py"></script>
+      <script src="script.java"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    </html>
+    
+
+
+   
